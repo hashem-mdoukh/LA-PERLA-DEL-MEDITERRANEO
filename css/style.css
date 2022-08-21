@@ -396,16 +396,16 @@ header .container .mobile span:nth-child(3) {
 .services .ser-box .content {
     padding: 0px 10px 20px 10px;
 }
-.services .ser-box .content h1{
+.services .ser-box .content h1 {
     color: var(--text-services);
     font-size: 25px;
     font-weight: 700;
     margin: 10px 20px 30px 10px;
     line-height: 30px;
 }
-.services .ser-box .content p{
+.services .ser-box .content p {
     font-weight: 400;
-    font-size: 25px;
+    font-size: 23px;
     line-height: 34px;
     text-transform: lowercase;
 }
@@ -431,7 +431,7 @@ header .container .mobile span:nth-child(3) {
 @media (max-width: 767px) {
     .services .container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
         gap: 50px;
     }
     .services .top-header h1 {
@@ -502,7 +502,7 @@ header .container .mobile span:nth-child(3) {
     position: absolute;
 }
 .work .container .box:nth-child(3) .image-small:nth-child(1)::before {
-    content: url(../image/Aftre-5.png);
+    content: url(../image/After-5.png);
     position: absolute;
 }
 .work .container .box:nth-child(3) .image-small:nth-child(2)::before {
@@ -523,10 +523,6 @@ header .container .mobile span:nth-child(3) {
 @media (max-width: 767px) {
     .work .container .image {
         margin-right: 0px;
-    }
-    .work .container .image::before {
-        content: url(../image/before-mobile.png);
-        position: absolute;
     }
     .work .container .image img {
         width: 342px;
@@ -557,8 +553,12 @@ header .container .mobile span:nth-child(3) {
     margin-top: 50px;
     text-align: center;
     box-shadow: 1px 1px 5px;
-    height: 300px;
     position: relative;
+}
+@media (min-width: 992px) {
+    .testimonials .container .test-box {
+        height: 320px;
+    }
 }
 .testimonials .container .test-box img {
     content: "";
@@ -580,9 +580,10 @@ header .container .mobile span:nth-child(3) {
     line-height: 25px;
 }
 .testimonials .container .test-box p {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     line-height: 19px;
+    text-align: justify;    
 }
 @media ( max-width: 768px) {
     .testimonials .container {
