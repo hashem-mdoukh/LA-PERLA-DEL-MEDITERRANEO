@@ -444,7 +444,7 @@ header .container .mobile span:nth-child(3) {
         font-size: 16px;
     }
     .services .container .ser-box {
-        height: 350px;
+        height: 410px;
     }
     .services .container .ser-box h1 {
         font-size: 20px;
@@ -521,6 +521,9 @@ header .container .mobile span:nth-child(3) {
     }
 }
 @media (max-width: 767px) {
+    .work .container .image {
+        margin-right: 0px;
+    }
     .work .container .image::before {
         content: url(../image/before-mobile.png);
         position: absolute;
