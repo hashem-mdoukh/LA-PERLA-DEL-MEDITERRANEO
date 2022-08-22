@@ -1,3 +1,6 @@
+/* Font Google */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 /* Satrt Components Global */
 :root {
     --main-color: #35AAAD;
@@ -12,6 +15,7 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
 }
 ul {
     list-style: none;
@@ -39,12 +43,15 @@ html {
     line-height: 30px;
     font-weight: 700;
     margin-bottom: 30px;
+    text-shadow: 0px 2px 4px #00000050;
 }
 .top-header p {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 20px;
+    text-shadow: 0px 2px 4px #00000050;
+
     text-transform: capitalize;
 }
 .top-header p:last-of-type {
@@ -52,6 +59,13 @@ html {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 15px;
+    text-shadow: 0px 2px 4px #00000050;
+}
+@media (min-width: 768px) {
+    .top-header {
+        width: 700px;
+        margin: 0px auto 50px;
+    }
 }
 @media (max-width: 767px) {
     .top-header {
@@ -67,9 +81,9 @@ html {
     }
 }
 /* Mobile */
-@media (min-width: 390px) {
+@media (max-width: 767px) {
     .container {
-        width: 370px;
+        width: 100%;
     }
 }
 /* Ipad */
@@ -96,7 +110,7 @@ html {
 header {
     background-color: #fff;
     height: 70px;
-    box-shadow: 0px 2px 5px;
+    box-shadow: 0px 2px 5px #00000025;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: fixed;
@@ -384,14 +398,16 @@ header .container .mobile span:nth-child(3) {
 }
 .services .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 540px));
     gap: 50px;
+    justify-content: center;
 }
 .services .ser-box  {
     background-color: #F9F9F9;
     text-align: center;
-    height: 550px;
+    height: 500px;
     border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000025;
 }
 .services .ser-box .content {
     padding: 0px 10px 20px 10px;
@@ -415,7 +431,7 @@ header .container .mobile span:nth-child(3) {
 @media (min-width: 768px) {
     .services .top-header {
         width: 700px;
-        margin: 0px auto 50px auto;
+        margin: 0px auto 50px;
     }
     .services .top-header p{
         font-size: 24px;
@@ -423,16 +439,10 @@ header .container .mobile span:nth-child(3) {
     .services .top-header p:last-of-type{
         font-size: 20px;
     }
-    .services .container .ser-box {
-        width: 500px;
-        margin: auto;
-    }
 }
 @media (max-width: 767px) {
     .services .container {
-        display: grid;
         grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-        gap: 50px;
     }
     .services .top-header h1 {
         font-size: 30px;
@@ -444,7 +454,7 @@ header .container .mobile span:nth-child(3) {
         font-size: 16px;
     }
     .services .container .ser-box {
-        height: 410px;
+        height: 390px;
     }
     .services .container .ser-box h1 {
         font-size: 20px;
