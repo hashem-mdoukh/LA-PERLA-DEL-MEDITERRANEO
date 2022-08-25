@@ -31,7 +31,6 @@ a {
 }
 html {
     scroll-behavior: smooth;
-    /* background-color: #f5f5f5; */
 }
 .top-header {
     text-align: center;
@@ -277,7 +276,7 @@ header .container .mobile span:nth-child(3) {
 .hero-section .container .text .btn a {
     color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .hero-section {
         background-position: top center;
         background-repeat: no-repeat;
@@ -367,7 +366,7 @@ header .container .mobile span:nth-child(3) {
     color: var(--main-color);
     font-weight: bold;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .about-us .container {
         flex-direction: column;
     }
@@ -405,9 +404,13 @@ header .container .mobile span:nth-child(3) {
 .services .ser-box  {
     background-color: #F9F9F9;
     text-align: center;
-    height: 500px;
     border-radius: 10px;
     box-shadow: 0px 4px 4px #00000025;
+}
+@media (min-width: 1200px) {
+    .services .ser-box {
+        height: 500px;
+    }
 }
 .services .ser-box .content {
     padding: 0px 10px 20px 10px;
@@ -442,7 +445,7 @@ header .container .mobile span:nth-child(3) {
 }
 @media (max-width: 767px) {
     .services .container {
-        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(340px, 540px));
     }
     .services .top-header h1 {
         font-size: 30px;
@@ -452,9 +455,6 @@ header .container .mobile span:nth-child(3) {
     }
     .services .top-header p:last-of-type {
         font-size: 16px;
-    }
-    .services .container .ser-box {
-        height: 390px;
     }
     .services .container .ser-box h1 {
         font-size: 20px;
@@ -519,7 +519,7 @@ header .container .mobile span:nth-child(3) {
     content: url(../image/Aftre-6.png);
     position: absolute;
 }  
-@media (max-width: 768px) {
+@media (max-width: 1256px) {
     .work .container {
         flex-direction: column;
     }
@@ -595,7 +595,7 @@ header .container .mobile span:nth-child(3) {
     line-height: 19px;
     text-align: justify;    
 }
-@media ( max-width: 768px) {
+@media ( max-width: 991px) {
     .testimonials .container {
         display: flex;
         flex-direction: column;
@@ -621,18 +621,31 @@ footer {
 @media(min-width: 768px) {
     footer .container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 20px;
     }
     footer .container .footer-box .btn span {
         font-size: 16px;
     }
 }
-@media (min-width: 1199px) {
+@media(min-width: 1000px) {
     footer .container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
+    }
+    footer .container .footer-box .btn span {
+        font-size: 16px;
+    }
+}
+@media(max-width: 768px) {
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    footer .container .footer-box .btn span {
+        font-size: 16px;
     }
 }
 @media(max-width: 767px) {
